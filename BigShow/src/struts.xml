@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<constant name="struts2.enable.DynamicMethodInvocation" value="true"></constant>
+<package name="bigshow" namespace="/" extends="struts-default">
+	<action name="login" class="com.king.Bigshow.actions.LoginAction">
+		<result name="success">/index.jsp</result>
+		<result name="failed">/Login.jsp</result>
+	</action>
+	<action name="register" class="com.king.Bigshow.actions.RegisterAction">
+	<result>/WEB-INF/UserZone.jsp</result>
+	</action>
+	<action name="Zone" class="com.king.Bigshow.actions.ZoneAction">
+	<result>/WEB-INF/UserZone.jsp</result>
+	</action>
+	<action name="Choose" class="com.king.Bigshow.actions.ChooseAction">
+	<result>/WEB-INF/Zonechoose.jsp</result>
+	</action>
+	<action name="Collect" class="com.king.Bigshow.actions.CollectAction">
+	<result>/WEB-INF/Zonechoose.jsp</result>
+	</action>
+	<action name="login_out" class="com.king.Bigshow.actions.LoginoutAction">
+ 	<result name="login_out">/index.jsp</result>
+	</action>
+	<action name="Analysis" class="com.king.Bigshow.actions.ChooseAnalysis">
+	<result>/WEB-INF/Zoneanalyis.jsp</result>
+	</action>
+	<action name="Search" class="com.king.Bigshow.actions.SearchAction">
+	<result>/WEB-INF/Zoneanalyis.jsp</result>
+	</action>
+	<action name="Show" class="com.king.Bigshow.actions.showAction">
+	<result>/WEB-INF/Zoneshow.jsp</result>
+	</action>
+	<action name="ajax" class="com.king.Bigshow.actions.ajaxAction">
+	<result>/echarts.jsp</result>
+	</action>
+	<action name="cloud" class="com.king.Bigshow.actions.ajaxCloudAction">
+	<result>/echarts_cloud.jsp</result>
+	</action>
+</package>
+</struts>    

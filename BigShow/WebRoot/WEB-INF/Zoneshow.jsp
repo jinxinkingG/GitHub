@@ -13,7 +13,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   <script type="text/javascript">
 
-/*   function hide(){
+/*function hide(){
   document.getElementById("d1").style.display='none';
   }
   function show(){
